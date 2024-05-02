@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dough"
+    tools:context=".IngredientsTab">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Pick your toppings"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/makePizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/tomato"
+        android:onClick="onGetPizzaButtonClick"
+        android:text="Make Pizza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <ImageButton
+        android:id="@+id/pepperoni"
+        android:layout_width="107dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:onClick="onToppingsButtonClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/makePizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mushroom"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/pepperoni" />
+
+    <ImageButton
+        android:id="@+id/sausage"
+        android:layout_width="107dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:onClick="onToppingsButtonClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/makePizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cheese"
+        app:layout_constraintVertical_bias="0.896"
+        app:srcCompat="@drawable/sausage" />
+
+    <ImageButton
+        android:id="@+id/cheese"
+        android:layout_width="107dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/transparent"
+        android:onClick="onToppingsButtonClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@drawable/cheese" />
+
+    <ImageButton
+        android:id="@+id/mushroom"
+        android:layout_width="107dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/transparent"
+        android:onClick="onToppingsButtonClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@drawable/mushrooms" />
+
+    <TextView
+        android:id="@+id/getToppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
